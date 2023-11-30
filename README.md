@@ -25,7 +25,7 @@ cd face-mask-detection
 pip install -r requirements.txt
 ```
 ### 2. Dataset
-Download the dataset from Kaggle using the Kaggle API key. Make sure to upload your Kaggle API key (kaggle.json) as mentioned in the notebook.
+Download the dataset from Kaggle using the Kaggle API key.  Upload your Kaggle API key (kaggle.json) as mentioned in the notebook.
 
 ```bash
 
@@ -37,7 +37,9 @@ Download the dataset from Kaggle using the Kaggle API key. Make sure to upload y
 ```
 ### 3. Training Images
 Below are sample images from the training dataset:
-![Sample Image][train_image_sample.png]
+
+![Sample Image](train_image_sample.png)
+
 
 ### 4. Running the Notebook
 Open the Jupyter notebook Face_Mask_Detection.ipynb in your local environment and run the code. Make sure to adjust any paths or configurations if needed.
@@ -54,10 +56,10 @@ The following data augmentation techniques are applied to the training dataset:
 
 #### Model Architecture
 The Face Mask Detection model is built using TensorFlow and Keras. The CNN model architecture consists of several layers, each serving a specific purpose in the image classification task.
- - Convolutional Layers: Three convolutional layers with 64 filters and a kernel size of 2x2.
+ - Convolutional Layers: Three convolutional layers with 64 filters and a kernel size(2x2).
  - MaxPooling Layers: Three max-pooling layers with a pool size of 2x2.
  - Flatten Layer: Flattens the output from the convolutional layers into a one-dimensional array.
- - Dense Layers: Two dense layers with ReLU activation functions. The first dense layer consists of 128 neurons, providing a high-level representation of the 
+ - Dense Layers: Two dense layers with ReLU activation functions. The first dense layer consist of 128 neurons, providing a high-level representation of the 
    learned features. The second dense layer, with 3 neurons and softmax activation, produces the final probability distribution for the three classes ('with_mask', 
    'without_mask', 'incorrect_mask').
  - Dropout Layer: Introduces dropout regularization with a rate of 0.5 to prevent overfitting during training.
@@ -65,9 +67,11 @@ The Face Mask Detection model is built using TensorFlow and Keras. The CNN model
 ### 5. Results
 Below are some predicted label images from the test dataset:
 
+![Sample Image](predicted_results.png)
+
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Acknowledgments
-Dataset: Face Mask Detector (mask, not mask, incorrect mask)
-TensorFlow and Keras for deep learning tools
+- Dataset: Face Mask Detector (mask, not mask, incorrect mask)
+- TensorFlow and Keras for deep learning tools
