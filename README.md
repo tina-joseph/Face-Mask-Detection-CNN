@@ -38,7 +38,7 @@ Download the dataset from Kaggle using the Kaggle API key.  Upload your Kaggle A
 ### 3. Training Images
 Below are sample images from the training dataset:
 
-![Sample Image](train_image_sample.png)
+![Sample Image](images/train_image_sample.png)
 
 
 ### 4. Running the Notebook
@@ -67,7 +67,7 @@ The Face Mask Detection model is built using TensorFlow and Keras. The CNN model
 ### 5. Results
 Below are some predicted label images from the test dataset:
 
-![Sample Image](predicted_results.png)
+![Sample Image](images/predicted_results.png)
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
